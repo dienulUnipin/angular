@@ -1,18 +1,29 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
+import { ModalComponent } from '@unipin/angular-applet/modal';
 
 @Component({
   selector: 'app-modal',
-  imports: [],
   templateUrl: './modal.component.html',
-  styleUrl: './modal.component.scss'
+  styleUrls: ['./modal.component.scss'],
+  imports: [ModalComponent]
 })
-export class ModalComponent implements OnInit{
+export class ModalComponentv1 implements OnInit {
 
- constructor(
-  
- ){}
+  public isModalOpen = false; // ✅ Use Signal<boolean> instead of InputSignal<boolean>
 
- public ngOnInit(): void {
-   
- }
+  constructor() {}
+
+  public ngOnInit(): void {}
+
+  public openModal(): void {
+    this.isModalOpen = true; // ✅ Use `.set(value)`
+  }
+
+  public closeModal(): void {
+    this.isModalOpen= false; // ✅ Use `.set(value)`
+  }
+
+  public onModalDismissed(): void {
+    console.log('Modal closed');
+  }
 }

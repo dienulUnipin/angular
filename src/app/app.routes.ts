@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { ModalComponent } from './features/modal/modal.component';
+import { ModalComponentv1 } from './features/modal/modal.component';
 
 export const routes: Routes = [
     {
         path: 'modal',
-        component: ModalComponent
+        component: ModalComponentv1
     },
 ];
