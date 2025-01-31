@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+// @import '@angular/cdk/overlay-prebuilt.css';
+
+// @layer base {
+//     :root {
+//         --color-primary: rgb(255, 150, 45);
+//     }
+
+//     html, body {
+//         color: #fff;
+//         background: #13112e;
+//     }
+//     ::-webkit-scrollbar {
+//         width: 8px;
+//         height: 8px;
+//     }
+//     ::-webkit-scrollbar-track, ::-webkit-scrollbar-thumb {
+//         border-radius: 4px;
+//         background: rgba(255,255,255,.12);
+//     }
+// }
+
+// cdk-dialog-container > :first-child {
+//     @apply block size-full md:rounded-xl fade-in bg-white border border-orange-500
+// }
+
+// @keyframes fadeIn {
+//     0% {
+//         opacity: 0;
+//         transform: scale(.9);
+//     }
+//     100% {
+//         opacity: 1;
+//         transform: scale(1);
+//     }
+// }
+// .fade-in {
+//     animation: fadeIn .2s ease-in-out;
+// }

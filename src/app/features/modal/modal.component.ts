@@ -5,7 +5,7 @@ import { ModalComponent } from '@unipin/angular-applet/modal';
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss'],
-  imports: [ModalComponent]
+  imports: [ ModalComponent ]
 })
 export class ModalComponentv1 implements OnInit {
 
